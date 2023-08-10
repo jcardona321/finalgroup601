@@ -1,0 +1,43 @@
+/* Reset & Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Root Styles */
+html {
+  font-size: 18px; /* Allows for easy rem unit usage */
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif; /* Using Roboto as a clean font for modern look */
+  background-color: #181818; /* Dark background for gym vibe */
+  color: #FFFFFF; /* Contrasting white for text */
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  max-width: 100vw;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+/* Optional: Add some basic typography and layout styles */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; /* Bold for headers */
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #F04E31; /* High contrast and energetic link color */
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  text-decoration: underline;
+}

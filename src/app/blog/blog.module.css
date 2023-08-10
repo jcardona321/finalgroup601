@@ -1,0 +1,55 @@
+.post {
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adds a drop shadow for a lifted look */
+    background: linear-gradient(45deg, #a55a7e, #2a2e3d); /* Using a gradient for the background */
+    transition: transform 0.3s ease; /* Transition for hover effect */
+}
+
+.post:hover {
+    transform: scale(1.05); /* Slightly enlarges the post on hover */
+}
+
+.link {
+    text-decoration: none;
+    color: #ffffff; /* Changed the link color to white */
+    transition: color 0.3s ease; /* Transition for hover effect */
+}
+
+.link:hover {
+    color: #DBAB7E; /* Lighten the link color when hovered */
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background: #463f3a; /* Darker shade for the top section */
+    padding: 10px 15px;
+    align-items: center;
+    border-radius: 5px 5px 0 0; /* Slightly larger border-radius for a smoother look */
+}
+
+.shortdescription {
+   text-indent: 20px; /* Increased indentation */
+   font-size: 16px; /* Increased the font size */
+   min-height: 100px;
+   padding: 15px;
+   background: rgba(255, 255, 255, 0.1); /* Semi-transparent background for the description */
+   border-radius: 5px; /* Smooth edges */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Now it'll display three items in a row */
+    grid-gap: 25px; /* Increased the gap slightly */
+    padding: 25px; /* Increased the padding */
+    margin: 0 auto;
+    max-width: 1400px; /* Set a max width for larger screens */
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

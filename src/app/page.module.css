@@ -1,0 +1,155 @@
+/* Global Layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-color: #121212; /* Dark background for a change */
+  }
+  
+  /* Hero Section */
+  .heroSection {
+    position: relative;
+    height: 88vh;
+    width: 100%;
+    background-image: url("/gymBackground.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .heroSection .heroContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .heroSection .heroTitle {
+    font-size: 2.8rem;
+    color: #007BFF; /* A Bright Blue */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+  }
+  .heroSection .heroSubtitle {
+    font-size: 1.4rem;
+    color: #ccc; /* Lighter Gray */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  }
+ .heroSection {
+    position: relative;
+    height: 88vh;
+    width: 100%;
+    background-image: url("/gym.jpg");
+    background-repeat: repeat-x;  /* This will make it repeat horizontally */
+    background-size: auto 88vh;  /* This adjusts the height of each image to fit the section */
+    background-position: center top;
+
+  }
+  .heroSection .ctaButton:hover {
+    background-color: #007BFF;
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  /* Athlete Showcase */
+  .athleteShowcase {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 0;
+    background-color: #1a1a1a;
+  }
+  .athlete img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .athlete figcaption {
+    margin-top: 8px;
+    color: #007BFF;
+  }
+  
+  /* Motivation Section */
+  .motivationSection {
+    padding: 58px 0;
+    background-color: #2a2a2a;
+  }
+  .motivationTitle {
+    font-size: 2.4rem;
+    color: #007BFF;
+  }
+  .motivationText {
+    font-size: 1.15rem;
+    color: #b0b0b0;
+    max-width: 780px;
+  }
+  .exploreButton {
+    margin-top: 18px;
+    padding: 8px 18px;
+    border: 2px solid #007BFF;
+    border-radius: 45px;
+    background-color: transparent;
+    color: #007BFF;
+    cursor: pointer;
+    transition: all 0.25s;
+  }
+  .exploreButton:hover {
+    background-color: #007BFF;
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  /* Contact Section */
+  .contactSection {
+    padding: 58px 0;
+  }
+  .contactTitle {
+    font-size: 2.4rem;
+    color: #007BFF;
+  }
+  .form input {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 2px solid #444;
+    font-size: 0.95rem;
+    background-color: #333;
+    color: #b0b0b0;
+  }
+  .form input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px #007BFF;
+  }
+  .form button {
+    padding: 8px 18px;
+    border: 2px solid #007BFF;
+    border-radius: 45px;
+    background-color: transparent;
+    color: #007BFF;
+    cursor: pointer;
+    transition: all 0.25s;
+  }
+  .form button:hover {
+    background-color: #007BFF;
+    color: white;
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .heroSection .heroTitle {
+      font-size: 1.9rem;
+    }
+    .heroSection .heroSubtitle {
+      font-size: 0.95rem;
+    }
+    .athleteShowcase {
+      flex-direction: column;
+      gap: 18px;
+    }
+    .athlete {
+      width: 100%;
+    }
+    .motivationTitle {
+      font-size: 1.9rem;
+    }
+  }
+  
